@@ -2,29 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tailored tech solutions to unlock innovation.">
+    <title>AP Integrations - Tailored Tech Solutions</title>
+    <meta name="description" content="AP Integrations offers customized tech solutions including data integration, machine learning models, and custom app development.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- SEO Meta Tags -->
     <meta property="og:title" content="AP Integrations - Tailored Tech Solutions">
-    <meta property="og:description" content="Customized solutions for your business's success.">
+    <meta property="og:description" content="Unlock innovation with AP Integrations' customized tech solutions.">
     <meta property="og:image" content="https://www.apintegrations.com/images/og-image.jpg">
     <meta property="og:url" content="https://www.apintegrations.com">
     <meta name="twitter:card" content="summary_large_image">
-    <title>AP Integrations - Tailored Tech Solutions</title>
+
+    <!-- Favicon -->
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Preload Key Resources -->
+    <link rel="preload" href="images/logo.png" as="image">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "AP Integrations",
+      "url": "https://www.apintegrations.com",
+      "logo": "https://www.apintegrations.com/images/logo.png",
+      "sameAs": [
+        "https://linkedin.com/in/alecposner"
+      ]
+    }
+    </script>
 </head>
 <body>
+
     <header>
-        <nav class="navbar">
+        <nav class="navbar container">
             <a href="#home" class="logo">
                 <img src="images/logo.png" alt="AP Integrations Logo">
             </a>
-            <button class="menu-toggle" aria-label="Toggle Navigation">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon" aria-label="Toggle Navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
             <ul class="nav-links">
                 <li><a href="#services">Services</a></li>
                 <li><a href="#about">About Us</a></li>
@@ -35,76 +63,204 @@
 
     <main id="home">
         <section class="hero">
-            <h1>Unlock Innovation with Tailored Tech Solutions</h1>
-            <p>Customized tech solutions that drive your business forward.</p>
-            <a href="#contact" class="cta-button">Get Started</a>
-        </section>
-
-        <section id="services">
-            <h2>Our Services</h2>
-            <div class="services-grid">
-                <article class="service-item">
-                    <img src="https://cdn-icons-png.flaticon.com/512/7655/7655685.png" alt="Data Integration Icon">
-                    <h3>Data Integration</h3>
-                    <p>Seamless data integration across multiple industries for smarter decision-making.</p>
-                </article>
-                <article class="service-item">
-                    <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="Custom App Development Icon">
-                    <h3>Custom App Development</h3>
-                    <p>Building applications tailored to your business needs.</p>
-                </article>
-                <article class="service-item">
-                    <img src="https://cdn-icons-png.flaticon.com/512/2103/2103889.png" alt="Machine Learning Models Icon">
-                    <h3>Machine Learning Models</h3>
-                    <p>Implementing AI solutions to automate and optimize processes.</p>
-                </article>
-                <article class="service-item">
-                    <img src="https://cdn-icons-png.flaticon.com/512/11320/11320158.png" alt="Process Automation Icon">
-                    <h3>Process Automation</h3>
-                    <p>Streamlining operations to increase efficiency and reduce costs.</p>
-                </article>
+            <div class="hero-content">
+                <h1>Unlock Innovation with Tailored Tech Solutions</h1>
+                <p>Customized tech solutions that drive your business forward.</p>
+                <a href="#contact" class="cta-button">Get Started</a>
             </div>
         </section>
 
+        <section id="services">
+            <div class="container">
+                <h2 class="section-title">Our Services</h2>
+                <div class="services-grid">
+                    <!-- Data Integration -->
+                    <article class="service-item">
+                        <img src="https://cdn-icons-png.flaticon.com/512/7655/7655685.png" alt="Data Integration Icon">
+                        <h3>Data Integration</h3>
+                        <p>Seamless data integration across multiple industries for smarter decision-making.</p>
+                    </article>
+                    <!-- Custom App Development -->
+                    <article class="service-item">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="Custom App Development Icon">
+                        <h3>Custom App Development</h3>
+                        <p>Building applications tailored to your business needs.</p>
+                    </article>
+                    <!-- Machine Learning Models -->
+                    <article class="service-item">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2103/2103889.png" alt="Machine Learning Models Icon">
+                        <h3>Machine Learning Models</h3>
+                        <p>Implementing AI solutions to automate and optimize processes.</p>
+                    </article>
+                    <!-- Process Automation -->
+                    <article class="service-item">
+                        <img src="https://cdn-icons-png.flaticon.com/512/11320/11320158.png" alt="Process Automation Icon">
+                        <h3>Process Automation</h3>
+                        <p>Streamlining operations to increase efficiency and reduce costs.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
         <section id="about">
-            <h2>About AP Integrations</h2>
-            <p>Founded by Alec Posner, AP Integrations specializes in creating tech solutions that fit your specific needs. From optimizing user experiences to developing custom applications, we harness the power of data and technology to drive innovation.</p>
-            <blockquote>
-                <p>"AP Integrations transformed our data management, making our operations more efficient than ever."</p>
-                <cite>- Satisfied Client</cite>
-            </blockquote>
+            <div class="container">
+                <h2 class="section-title">About AP Integrations</h2>
+                <p>
+                    Founded by Alec Posner, AP Integrations specializes in creating tech solutions that fit your specific needs. From optimizing user experiences to developing custom applications, we harness the power of data and technology to drive innovation.
+                </p>
+                <blockquote class="testimonial">
+                    <p>"AP Integrations transformed our data management, making our operations more efficient than ever."</p>
+                    <cite>- Satisfied Client</cite>
+                </blockquote>
+            </div>
         </section>
     </main>
 
     <section id="contact">
-        <h2>Ready to Transform Your Business?</h2>
-        <p>Contact us today to discuss how we can drive innovation together.</p>
-        <button class="cta-button" id="open-form-button">Submit Request</button>
+        <div class="contact-content">
+            <h2>Ready to Transform Your Business?</h2>
+            <p>Contact us today to discuss how we can drive innovation together.</p>
+            <button class="cta-button" id="open-form-button">Submit Request</button>
+        </div>
     </section>
 
+    <!-- Modal Contact Form -->
+    <div id="contact-modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="contact-modal-title">
+        <div class="modal-content">
+            <button class="close-button" id="close-form-button" aria-label="Close Form">&times;</button>
+            <h2 id="contact-modal-title">Submit Your Request</h2>
+            <form id="contact-form" action="mailto:info@apintegrations.com" method="POST" enctype="text/plain">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <div class="form-group">
+                        <label for="name">Name<span>*</span></label>
+                        <input type="text" id="name" name="name" required placeholder="Your Full Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company Name<span>*</span></label>
+                        <input type="text" id="company" name="company" required placeholder="Your Company Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email<span>*</span></label>
+                        <input type="email" id="email" name="email" required placeholder="Your Email Address">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number<span>*</span></label>
+                        <input type="tel" id="phone" name="phone" required placeholder="Your Phone Number">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Project Details</legend>
+                    <div class="form-group">
+                        <label for="project-type">Project Type<span>*</span></label>
+                        <select id="project-type" name="project-type" required>
+                            <option value="" disabled selected>Select a Project Type</option>
+                            <option value="data-integration">Data Integration</option>
+                            <option value="app-development">Custom App Development</option>
+                            <option value="machine-learning">Machine Learning Models</option>
+                            <option value="process-automation">Process Automation</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="budget">Estimated Budget</label>
+                        <select id="budget" name="budget">
+                            <option value="" disabled selected>Select a Budget Range</option>
+                            <option value="under-10k">Under $10,000</option>
+                            <option value="10k-50k">$10,000 - $50,000</option>
+                            <option value="50k-100k">$50,000 - $100,000</option>
+                            <option value="over-100k">Over $100,000</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="timeline">Project Timeline</label>
+                        <select id="timeline" name="timeline">
+                            <option value="" disabled selected>Select a Timeline</option>
+                            <option value="asap">ASAP</option>
+                            <option value="1-3-months">1-3 Months</option>
+                            <option value="3-6-months">3-6 Months</option>
+                            <option value="over-6-months">Over 6 Months</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Project Details<span>*</span></label>
+                        <textarea id="message" name="message" required placeholder="Please describe your project in detail..."></textarea>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Preferences</legend>
+                    <div class="form-group">
+                        <label>Preferred Contact Method<span>*</span></label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="contact-method" value="email" checked> Email</label>
+                            <label><input type="checkbox" name="contact-method" value="phone"> Phone</label>
+                            <label><input type="checkbox" name="contact-method" value="video-call"> Video Call</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+        </div>
+    </div>
+
     <footer>
-        <p>&copy; 2024 AP Integrations LLC. All rights reserved.</p>
+        <div class="footer-content container">
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/alecposner/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn Logo" class="linkedin-logo">
+                </a>
+            </div>
+            <p>&copy; 2024 AP Integrations LLC. All rights reserved.</p>
+        </div>
     </footer>
 
+    <!-- JavaScript for Mobile Navigation and Modal -->
     <script>
-        const menuToggle = document.querySelector('.menu-toggle');
+        // Mobile Navigation Script
+        const menuToggle = document.getElementById('menu-toggle');
         const navLinks = document.querySelector('.nav-links');
 
-        menuToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('open');
-        });
-
-        document.addEventListener('click', (event) => {
-            if (!navLinks.contains(event.target) && !menuToggle.contains(event.target)) {
+        menuToggle.addEventListener('change', function() {
+            if (this.checked) {
+                navLinks.classList.add('open');
+            } else {
                 navLinks.classList.remove('open');
             }
         });
 
-        navLinks.addEventListener('click', (event) => {
-            if (event.target.tagName === 'A') {
-                navLinks.classList.remove('open');
+        // Modal Form Script
+        const openFormButton = document.getElementById('open-form-button');
+        const closeFormButton = document.getElementById('close-form-button');
+        const contactModal = document.getElementById('contact-modal');
+
+        openFormButton.addEventListener('click', () => {
+            contactModal.classList.add('open');
+            contactModal.setAttribute('aria-hidden', 'false');
+            // Optionally, set focus to the first input in the form
+            document.getElementById('name').focus();
+        });
+
+        closeFormButton.addEventListener('click', () => {
+            contactModal.classList.remove('open');
+            contactModal.setAttribute('aria-hidden', 'true');
+        });
+
+        // Close modal when clicking outside the modal content
+        window.addEventListener('click', (e) => {
+            if (e.target === contactModal) {
+                contactModal.classList.remove('open');
+                contactModal.setAttribute('aria-hidden', 'true');
+            }
+        });
+
+        // Optional: Close modal with ESC key
+        window.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && contactModal.classList.contains('open')) {
+                contactModal.classList.remove('open');
+                contactModal.setAttribute('aria-hidden', 'true');
             }
         });
     </script>
+
 </body>
 </html>
+
